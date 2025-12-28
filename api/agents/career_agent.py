@@ -2,10 +2,10 @@ from langchain_groq import ChatGroq
 from langchain_core.messages import SystemMessage
 
 # IMPORT CONFIG HERE
-from config import Config
+from ..config import Config
 
-from tools.resume_ops import compare_jds_tool
-from tools.video_search import find_youtube_videos_tool
+from ..tools.resume_ops import compare_jds_tool
+from ..tools.video_search import find_youtube_videos_tool
 
 # Initialize Groq using Config variables
 llm = ChatGroq(

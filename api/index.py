@@ -1,7 +1,7 @@
 from fastapi import FastAPI, HTTPException, UploadFile, File, Form
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
-from workflows.matching_flow import app as graph_app
+from .workflows.matching_flow import app as graph_app
 from langchain_core.messages import HumanMessage, ToolMessage
 import re
 import ast

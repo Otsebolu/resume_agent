@@ -1,6 +1,6 @@
 from langchain_core.tools import tool
 from serpapi import GoogleSearch
-from config import Config  # <--- IMPORT CONFIG
+from ..config import Config  # <--- IMPORT CONFIG
 
 @tool
 def find_youtube_videos_tool(missing_skill: str):

@@ -3,7 +3,7 @@ from langgraph.graph import StateGraph, END
 from langgraph.graph.message import add_messages
 from langgraph.prebuilt import ToolNode
 
-from agents.career_agent import career_node, tools
+from ..agents.career_agent import career_node, tools
 
 # 1. Define State
 class AgentState(TypedDict):
