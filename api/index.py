@@ -30,9 +30,9 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-@app.get("/")
-def home():
-    return {"message": "Career Coach AI is running!"}
+@app.get("/api/health")
+def health_check():
+    return {"status": "ok", "message": "Career Coach AI Backend is running!"}
 
 def parse_response(final_response: str, messages: list) -> dict:
     """Parse the agent response into structured JSON"""
